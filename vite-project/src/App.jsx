@@ -1,15 +1,29 @@
-import React from 'react'
-import './App.css'
-import WeatherCard from './Components/WeatherCard'
-import BulbToggle from './Components/BulbToggle'
+import React from "react";
+import WeatherCard from "./Components/WeatherCard.jsx";
+// import BulbToggle from './Components/BulbToggle'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Calculator from "./Components/Calculator.jsx";
+import StopWatch from "./Components/StopWatch.jsx";
+
 const App = () => {
   return (
-    <>
-    <BulbToggle/>
-{/* /* <WeatherCard location={"Jaipur"} temp={"40°"} pic={"https://static.toiimg.com/photo/107164723.cms"}/>  
-<WeatherCard location={"Mumbai"} temp={"35°"} pic={"https://codefrog.space/cp/wp/mumbai.png"}/>    */}
-</>
-  )
-}
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<WeatherCard />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/stopwatch" element={<StopWatch />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;
