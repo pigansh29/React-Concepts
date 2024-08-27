@@ -4,7 +4,6 @@ import "./Calculator.css";
 const Calculator = () => {
   const [input, setInput] = useState("");
   const [result, setResult] = useState("0.0");
-
   const handleButtonClick = (value) => {
     if (value === "=") {
       try {

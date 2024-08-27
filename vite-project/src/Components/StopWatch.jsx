@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 const StopWatch = () => {
   const [time, setTime] = useState(0);
   const [isActive, setIsActive] = useState(false);
-
   useEffect(() => {
     let interval = null;
     interval - isActive
