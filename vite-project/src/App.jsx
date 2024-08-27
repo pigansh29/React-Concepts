@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Router>
       
-      <div>
+       <div>
         <nav>
           <ul>
             <li></li>
