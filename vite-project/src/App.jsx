@@ -8,6 +8,7 @@ import StopWatch from "./Components/StopWatch.jsx";
 const App = () => {
   return (
     <Router>
+      
       <div>
         <nav>
           <ul>
